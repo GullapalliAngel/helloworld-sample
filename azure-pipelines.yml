@@ -2,9 +2,6 @@
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-- task: SonarCloudPrepare@1
-  inputs:
-    scannerMode: 'MSBuild'
 
 trigger:
 - main
