@@ -40,4 +40,4 @@ steps:
 - task: owaspzap@1
   inputs:
     scantype: 'targetedScan'
-    url: 'https://github.com/GullapalliAngel/helloworld-sample/blob/main/script.js'
+    url: 'https://github.com/GullapalliAngel/helloworld-sample/blob/main/style.css'
