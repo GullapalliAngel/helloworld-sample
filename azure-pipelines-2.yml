@@ -37,3 +37,5 @@ steps:
   inputs:
     projectName: 'helloworld-sample'
     format: 'HTML'
+- task: owaspzap@1
+  inputs:
