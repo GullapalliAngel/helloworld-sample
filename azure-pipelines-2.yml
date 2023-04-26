@@ -42,3 +42,9 @@ steps:
     threshold: '1000'
     scantype: 'targetedScan'
     url: 'https://github.com/GullapalliAngel/helloworld-sample/blob/main/style.css'
+- task: Application security testing@2022
+  inputs:
+    projectName: 'helloworld'
+    enableProxy: false
+    enableSastScan: true
+    enableDependencyScan: false
