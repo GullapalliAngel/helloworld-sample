@@ -12,6 +12,7 @@ pool:
 steps:
 - checkout: self
   fetchDepth: 0
+
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'helloworld'
@@ -20,6 +21,7 @@ steps:
     configMode: 'manual'
     cliProjectName: 'hello'
     cliSources: '.'
+
 steps:
 - task: ArchiveFiles@2
   inputs:
