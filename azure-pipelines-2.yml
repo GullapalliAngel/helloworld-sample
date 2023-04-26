@@ -19,7 +19,7 @@ steps:
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: 'DevOps-TCS-Team1_helloworld-sample'
-    cliProjectName: 'hello'
+    cliProjectName: 'helloworld-sample'
     cliSources: '$(build.sourcesDirectory)'
     projectName: 'helloworld-sample'
 - task: ArchiveFiles@2
