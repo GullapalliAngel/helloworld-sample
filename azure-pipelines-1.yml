@@ -16,11 +16,6 @@ steps:
     organization: 'devops-tcs-team1'
     scannerMode: 'MSBuild'
     projectKey: 'd47l6kxp6xaa6vzxhatcecp245cl5brh5imw3xtwxsa3p6kgqfca'
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-
 - task: PublishBuildArtifacts@1
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
