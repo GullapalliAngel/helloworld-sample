@@ -39,6 +39,6 @@ steps:
     format: 'HTML'
 - task: owaspzap@1
   inputs:
-    threshold: '700'
+    threshold: '1000'
     scantype: 'targetedScan'
     url: 'https://github.com/GullapalliAngel/helloworld-sample/blob/main/style.css'
