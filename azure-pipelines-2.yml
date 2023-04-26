@@ -1,4 +1,12 @@
 # HTML
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'helloworld'
+    organization: 'devops-tcs-team1'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectName: 'hello'
+    cliSources: '.'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
