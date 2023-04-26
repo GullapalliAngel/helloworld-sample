@@ -15,7 +15,9 @@ steps:
     SonarCloud: 'lsg-sonarcloud'
     organization: 'devops-tcs-team1'
     scannerMode: 'CLI'
-    configMode: 'file'
+    configMode: 'manual'
+    cliProjectKey: 'd47l6kxp6xaa6vzxhatcecp245cl5brh5imw3xtwxsa3p6kgqfca'
+    cliSources: '.'
 
 #- script: echo Hello, world!
 #  displayName: 'Run a one-line script'
