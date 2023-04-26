@@ -20,8 +20,9 @@ steps:
   inputs:
     rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: false
-- task: SonarCloudAnalyze@1
+
 - task: PublishBuildArtifacts@1
+- task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
