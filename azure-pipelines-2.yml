@@ -44,7 +44,7 @@ steps:
     url: 'https://github.com/GullapalliAngel/helloworld-sample/blob/main/style.css'
 - task: Application security testing@2022
   inputs:
-    projectName: 'helloworld'
+    projectName: 'helloworld-sample'
     enableProxy: false
     enableSastScan: true
     enableDependencyScan: false
