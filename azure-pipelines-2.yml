@@ -39,3 +39,4 @@ steps:
     format: 'HTML'
 - task: owaspzap@1
   inputs:
+    scantype: 'targetedScan'
