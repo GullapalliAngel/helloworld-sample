@@ -22,16 +22,15 @@ steps:
     cliProjectName: 'helloworld-sample'
     cliSources: '$(build.sourcesDirectory)'
     projectName: 'helloworld-sample'
-
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(build.sourcesDirectory)'
+    includeRootFolder: false
+- task: PublishBuildArtifacts@1
+#- script: echo Hello, world!
+#  displayName: 'Run a one-line script'
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
-#- task: ArchiveFiles@2
-#  inputs:
-#    rootFolderOrFile: '$(build.sourcesDirectory)'
-#    includeRootFolder: false
-#- task: PublishBuildArtifacts@1
 
