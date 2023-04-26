@@ -16,20 +16,22 @@ steps:
   inputs:
     SonarCloud: 'helloworld'
     organization: 'devops-tcs-team1'
-    scannerMode: 'MSBuild'
-    projectKey: 'DevOps-TCS-Team1_helloworld-sample'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'DevOps-TCS-Team1_helloworld-sample'
+    cliProjectName: 'helloworld-sample'
+    cliSources: '$(build.sourcesDirectory)'
     projectName: 'helloworld-sample'
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: SonarCloudAnalyze@1
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
 #- task: ArchiveFiles@2
 #  inputs:
 #    rootFolderOrFile: '$(build.sourcesDirectory)'
 #    includeRootFolder: false
 #- task: PublishBuildArtifacts@1
 
-- task: SonarCloudAnalyze@1
-- task: SonarCloudPublish@1
-  inputs:
-    pollingTimeoutSec: '300'
