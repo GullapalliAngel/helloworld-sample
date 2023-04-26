@@ -33,3 +33,7 @@ steps:
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
+- task: dependency-check-build-task@6
+  inputs:
+    projectName: 'helloworld-sample'
+    format: 'HTML'
